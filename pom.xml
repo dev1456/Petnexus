@@ -269,6 +269,19 @@
     </plugins>
   </build>
 
+    <distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://mynexusserver.com:8081/repository/pet1</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://mynexusserver.com:8081/repository/pet2</url>
+        </snapshotRepository>
+    </distributionManagement>
+
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
